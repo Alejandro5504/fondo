@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExamenQuestionario</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="./css/css.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="row justify-content-center">
+
+            <div class="col-12 col-sm-10 col-md-8 col-lg-7 columna">
+                <h1 id="titulo">Encuesta sobre Perfumería</h1>
+
+                <p class="lparrafo" id="descripcion">¿Cuáles son tus gustos sobre fragancias? Llena los placeholders con
+                    tu información?</p>
+
+
+                <form action="/ruta-del-servidor" method="POST">
+
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">nombre</label>
+                        <input type="text" class="form-control" id="nombre" placeholder="Escribe nombre" required>
+                    </div>
+
+
+                    <div class="mb-3">
+                        <label for="edad" class="form-label">edad</label>
+                        <input type="number" class="form-control" id="edad" placeholder="selecciona aqui tu edad"
+                            required>
+                    </div>
+
+
+                    <div class="mb-3">
+
+                        <label for="familia" class="form-label">Cuál es tu familia olfativa preferida</label>
+                        <select class="form-select mb-3" aria-label="Large select example" id="familia" required>
+                            <option selected> Abre este menu de seleccion</option>
+                            <option value="1">Citrica o hesperedi</option>
+                            <option value="2">Floral</option>
+                            <option value="3">Amaderada</option>
+                            <option value="4">Fougere</option>
+                            <option value="5">Chipre</option>
+                            <option value="6" selected>Gourmand</option>
+
+
+                        </select>
+
+                    </div>
+
+                    <div class="mb-3">
+
+                        <label class="form-check-label" for="radioDefault1">¿Que tipo de fragancia prefieres?</label>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault1">Femenina
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault2"
+                                checked>Masculina
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault3">Unisex
+                        </div>
+
+                        <div class="form-check">
+
+                        </div>
+
+                        <div class="mb-3">
+
+                            <label class="form-check-label" for="checkEF">
+                                ¿Qué concentraciones utilizas de manera habitual? (selecciona todos los que quieras)
+                            </label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="checkEF">
+                            <label class="form-check-label" for="checkEF">
+                                Eau Fraîche (EF): 1-3% duración corta, ideal para climas cálidos.
+                            </label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="checkEDC">
+                            <label class="form-check-label" for="checkEDC">
+                                Eau de Cologne (EDC): 3-5%, duración moderada, ideal para el uso diario.
+                            </label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="checkEDT">
+                            <label class="form-check-label" for="checkEDT">
+                                Eau de toilette (EDT): 4-8% duración media, versátil, para diferentes ocasiones.
+                            </label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="checkEDP">
+                            <label class="form-check-label" for="checkEDP">
+                                Eau de parfum (EDP): 8-15% duración prolongada, para la noche o evento.
+                            </label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="checkParfum">
+                            <label class="form-check-label" for="checkParfum">
+                                Parfum (P) o Extrait de Parfum: 15-30%, duración muy prolongada.
+                            </label>
+                        </div>
+
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Nombra tres de tus perfumes
+                            preferidos</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                            placeholder="name@example.com">
+                    </div>
+                    <button type="submit">Enviar</button>
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

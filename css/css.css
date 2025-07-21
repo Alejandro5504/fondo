@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Tagesschrift&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+
+body {
+
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+
+    background-image: url(../img/fondo-modelo-inconsutil-damasco-vector-clasico-lujo-antiguo-ornamento-damasco-real-victoriana-textura-transparente-papeles-pintados-textiles-envoltura-plantilla-barroca-floral-exquisita_1217-738.png);
+
+}
+div {
+
+    background-color: aqua;
+
+}
